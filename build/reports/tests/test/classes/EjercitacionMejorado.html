@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class EjercitacionMejorado</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class EjercitacionMejorado</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; EjercitacionMejorado</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.155s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="casoPruebaUno"></a>
+<h3 class="failures">casoPruebaUno</h3>
+<span class="code">
+<pre>java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:157)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1086)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1006)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:789)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at EjercitacionMejorado.casoPruebaUno(EjercitacionMejorado.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">casoPruebaUno</td>
+<td class="failures">1.155s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21 nov. 2023 15:50:25</p>
+</div>
+</div>
+</body>
+</html>

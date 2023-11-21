@@ -4,33 +4,30 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
 public class EjercitacionMejorado {
+    RequestSpecification requestSpecification;
+
+    @BeforeMethod
+    public void setup(){
+        requestSpecification =
+                given()
+                        .baseUri("https://reqres.in")
+                        .contentType(ContentType.JSON)
+                        .filters(new ResponseLoggingFilter(), new RequestLoggingFilter());
+    }
 
     @Test
     public void casoPruebaUno(){
         //https://reqres.in/api/users/1
-        RequestSpecification requestSpecification =
-                given()
-                        .baseUri("https://reqres.in");
-
-        requestSpecification.filter(new RequestLoggingFilter());
-        requestSpecification.filter(new ResponseLoggingFilter());
-
-        String id = "1";
-
         Response response =
                 requestSpecification
                     .when()
-                    .get("/api/users/" + id);
-
-        //Validacion --> Status Code 200
-        //requestSpecification
-        //        .then()
-        //        .statusCode(200);
+                    .get("/api/users/1");
 
         Assert.assertEquals(response.statusCode(), 200, "El status code no es 200");
     }
@@ -38,14 +35,6 @@ public class EjercitacionMejorado {
 
     @Test
     public void casoPruebaDos(){
-        //https://reqres.in/api/users/2
-        RequestSpecification requestSpecification =
-                given()
-                        .baseUri("https://reqres.in");
-
-        requestSpecification.filter(new RequestLoggingFilter());
-        requestSpecification.filter(new ResponseLoggingFilter());
-
         Response response =
                 requestSpecification
                         .when()
@@ -57,17 +46,12 @@ public class EjercitacionMejorado {
     @Test
     public void casoPruebaTres(){
         //https://reqres.in/api/users
-        RequestSpecification requestSpecification =
+        requestSpecification.
                 given()
-                        .baseUri("https://reqres.in")
-                        .contentType(ContentType.JSON) //.header("Content-Type", "application/json");
                         .body("{\n" +
                                 "    \"name\": \"morpheus\",\n" +
                                 "    \"job\": \"leader\"\n" +
                                 "}");
-
-        requestSpecification.filter(new RequestLoggingFilter());
-        requestSpecification.filter(new ResponseLoggingFilter());
 
         Response response =
                 requestSpecification
@@ -81,17 +65,12 @@ public class EjercitacionMejorado {
     @Test
     public void casoPruebaCuarto(){
         //https://reqres.in/api/users/4
-        RequestSpecification requestSpecification =
+        requestSpecification.
                 given()
-                        .baseUri("https://reqres.in")
-                        .contentType(ContentType.JSON) //.header("Content-Type", "application/json");
                         .body("{\n" +
                                 "    \"name\": \"morpheus\",\n" +
                                 "    \"job\": \"zion resident\"\n" +
                                 "}");
-
-        requestSpecification.filter(new RequestLoggingFilter());
-        requestSpecification.filter(new ResponseLoggingFilter());
 
         Response response =
                 requestSpecification
@@ -106,13 +85,6 @@ public class EjercitacionMejorado {
     @Test
     public void casoPruebaQuinto(){
         //https://reqres.in/api/users/5
-        RequestSpecification requestSpecification =
-                given()
-                        .baseUri("https://reqres.in");
-
-        requestSpecification.filter(new RequestLoggingFilter());
-        requestSpecification.filter(new ResponseLoggingFilter());
-
         Response response =
                 requestSpecification
                         .when()

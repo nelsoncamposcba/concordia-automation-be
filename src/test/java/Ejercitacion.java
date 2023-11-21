@@ -1,3 +1,4 @@
+import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
@@ -119,6 +120,41 @@ public class Ejercitacion {
                         .delete("/api/users/5");
 
         Assert.assertEquals(response.statusCode(), 204, "El status code no es 204");
+    }
+
+
+    @Test
+    public void casoPruebaSeis(){
+        //https://reqres.in/api/users
+        Response response =
+                given()
+                        .baseUri("https://reqres.in")
+                        .contentType(ContentType.JSON) //.header("Content-Type", "application/json");
+                        .body("{\n" +
+                                "    \"name\": \"morpheus\",\n" +
+                                "    \"job\": \"leader\"\n" +
+                                "}")
+                        .filter(new RequestLoggingFilter())
+                        .filter(new ResponseLoggingFilter())
+                .when()
+                        .post("/api/users");
+
+        /*
+        RestAssured
+                .given()
+                    .baseUri("https://reqres.in")
+                    .contentType(ContentType.JSON) //.header("Content-Type", "application/json");
+                    .body("{\n" +
+                            "    \"name\": \"morpheus\",\n" +
+                            "    \"job\": \"leader\"\n" +
+                            "}")
+                    .filter(new RequestLoggingFilter())
+                    .filter(new ResponseLoggingFilter())
+                .when()
+                    .post("/api/users");;
+        */
+
+        Assert.assertEquals(response.statusCode(), 201, "El status code no es 201");
     }
 
 }
