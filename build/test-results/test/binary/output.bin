@@ -1,0 +1,44 @@
+Request method:	GET
+,Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Tue, 21 Nov 2023 18:13:39 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÑReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D"}]}
+¨Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
++Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 4810
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 829ae867aaf5200e-EZE
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
++        "email": "george.bluth@reqres.in",
+         "first_name": "George",
+        "last_name": "Bluth",
+<        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
