@@ -1,44 +1,190 @@
-Request method:	GET
-,Request URI:	https://reqres.in/api/users/1
+Request method:	PUT
+,Request URI:	https://reqres.in/api/users/4
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
+#				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "zion resident"
+}
 HTTP/1.1 200 OK
-%Date: Tue, 21 Nov 2023 18:13:39 GMT
+%Date: Tue, 21 Nov 2023 18:39:05 GMT
 /Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-ÑReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D"}]}
-¨Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700591945&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fU6RBXQEiOFsJ3PlOyXV05Upl820h%2Bq5tldtPr9QESs%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591945&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=fU6RBXQEiOFsJ3PlOyXV05Upl820h%2Bq5tldtPr9QESs%3D
 |Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 X-Powered-By: Express
  Access-Control-Allow-Origin: *
-+Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+*Etag: W/"50-hjCXObZRDoXe5AQXXXxU/JduSMA"
 Via: 1.1 vegur
-Cache-Control: max-age=14400
-CF-Cache-Status: HIT
-Age: 4810
+CF-Cache-Status: DYNAMIC
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 829ae867aaf5200e-EZE
+CF-RAY: 829b0da82ca91eb7-EZE
 Content-Encoding: gzip
 
 {
-    "data": {
-        "id": 1,
-+        "email": "george.bluth@reqres.in",
-         "first_name": "George",
-        "last_name": "Bluth",
-<        "avatar": "https://reqres.in/img/faces/1-image.jpg"
-    },
-    "support": {
-5        "url": "https://reqres.in/#support-heading",
-[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
+    "name": "morpheus",
+    "job": "zion resident",
+,    "updatedAt": "2023-11-21T18:39:05.343Z"
 }
+Request method:	GET
+,Request URI:	https://reqres.in/api/users/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Tue, 21 Nov 2023 18:39:06 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÑReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1699557403&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=0EjLDEpbhYMU7fVubnmxoseg8BEZQTZNBCHOrT2QSII%3D"}]}
+¨Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1699557403&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=0EjLDEpbhYMU7fVubnmxoseg8BEZQTZNBCHOrT2QSII%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
++Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 2526
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 829b0db32c1e1e78-EZE
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 2,
++        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+<        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+Request method:	DELETE
+,Request URI:	https://reqres.in/api/users/5
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+%Date: Tue, 21 Nov 2023 18:39:07 GMT
+Content-Length: 0
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700591947&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591947&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+)Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 829b0db4288da78a-EZE
+Request method:	POST
+*Request URI:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+#				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+HTTP/1.1 201 Created
+%Date: Tue, 21 Nov 2023 18:39:07 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 84
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1700591947&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591947&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"54-CJviCTAJb61jAFYEQq/Qjsv5c5M"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 829b0db7fb9f1e8e-EZE
+
+{
+    "name": "morpheus",
+    "job": "leader",
+    "id": "971",
+,    "createdAt": "2023-11-21T18:39:07.852Z"
+}
+Request method:	GET
+,Request URI:	https://reqres.in/api/users/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Tue, 21 Nov 2023 18:39:08 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÑReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D"}]}
+¨Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1698832815&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9ihbefoZnpNtvcX5KkL1hG7LeqgQEyevvUkW57z0YTk%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
++Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 6339
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 829b0dbb5bb31eb4-EZE
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 1,
++        "email": "george.bluth@reqres.in",
+         "first_name": "George",
+        "last_name": "Bluth",
+<        "avatar": "https://reqres.in/img/faces/1-image.jpg"
+    },
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}

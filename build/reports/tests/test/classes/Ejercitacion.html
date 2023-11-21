@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">5</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.487s</div>
+<div class="counter">5.466s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,80 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="casoPruebaUno"></a>
-<h3 class="failures">casoPruebaUno</h3>
-<span class="code">
-<pre>java.lang.AssertionError: El status code no es 200 expected [202] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at Ejercitacion.casoPruebaUno(Ejercitacion.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:146)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:91)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -145,16 +78,182 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">casoPruebaUno</td>
-<td class="failures">2.487s</td>
-<td class="failures">failed</td>
+<td class="success">casoPruebaCuarto</td>
+<td class="success">3.993s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">casoPruebaDos</td>
+<td class="success">0.197s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">casoPruebaQuinto</td>
+<td class="success">0.604s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">casoPruebaTres</td>
+<td class="success">0.577s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">casoPruebaUno</td>
+<td class="success">0.095s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Request method:	GET
+<pre>Request method:	PUT
+Request URI:	https://reqres.in/api/users/4
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;name&quot;: &quot;morpheus&quot;,
+    &quot;job&quot;: &quot;zion resident&quot;
+}
+HTTP/1.1 200 OK
+Date: Tue, 21 Nov 2023 18:39:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1700591945&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=fU6RBXQEiOFsJ3PlOyXV05Upl820h%2Bq5tldtPr9QESs%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591945&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=fU6RBXQEiOFsJ3PlOyXV05Upl820h%2Bq5tldtPr9QESs%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;50-hjCXObZRDoXe5AQXXXxU/JduSMA&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 829b0da82ca91eb7-EZE
+Content-Encoding: gzip
+
+{
+    &quot;name&quot;: &quot;morpheus&quot;,
+    &quot;job&quot;: &quot;zion resident&quot;,
+    &quot;updatedAt&quot;: &quot;2023-11-21T18:39:05.343Z&quot;
+}
+Request method:	GET
+Request URI:	https://reqres.in/api/users/2
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Date: Tue, 21 Nov 2023 18:39:06 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1699557403&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=0EjLDEpbhYMU7fVubnmxoseg8BEZQTZNBCHOrT2QSII%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1699557403&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=0EjLDEpbhYMU7fVubnmxoseg8BEZQTZNBCHOrT2QSII%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 2526
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 829b0db32c1e1e78-EZE
+Content-Encoding: gzip
+
+{
+    &quot;data&quot;: {
+        &quot;id&quot;: 2,
+        &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,
+        &quot;first_name&quot;: &quot;Janet&quot;,
+        &quot;last_name&quot;: &quot;Weaver&quot;,
+        &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;
+    },
+    &quot;support&quot;: {
+        &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,
+        &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;
+    }
+}
+Request method:	DELETE
+Request URI:	https://reqres.in/api/users/5
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 204 No Content
+Date: Tue, 21 Nov 2023 18:39:07 GMT
+Content-Length: 0
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1700591947&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591947&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 829b0db4288da78a-EZE
+Request method:	POST
+Request URI:	https://reqres.in/api/users
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{
+    &quot;name&quot;: &quot;morpheus&quot;,
+    &quot;job&quot;: &quot;leader&quot;
+}
+HTTP/1.1 201 Created
+Date: Tue, 21 Nov 2023 18:39:07 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 84
+Connection: keep-alive
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1700591947&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D&quot;}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1700591947&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=NYwFL3BMSYrXIF4UNDCe9SWAwyhVnT1xQsjrOCQ1V%2Bc%3D
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/&quot;54-CJviCTAJb61jAFYEQq/Qjsv5c5M&quot;
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 829b0db7fb9f1e8e-EZE
+
+{
+    &quot;name&quot;: &quot;morpheus&quot;,
+    &quot;job&quot;: &quot;leader&quot;,
+    &quot;id&quot;: &quot;971&quot;,
+    &quot;createdAt&quot;: &quot;2023-11-21T18:39:07.852Z&quot;
+}
+Request method:	GET
 Request URI:	https://reqres.in/api/users/1
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
@@ -166,7 +265,7 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 HTTP/1.1 200 OK
-Date: Tue, 21 Nov 2023 18:13:39 GMT
+Date: Tue, 21 Nov 2023 18:39:08 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -179,10 +278,10 @@ Etag: W/&quot;118-P3iKcVpIgCj9HqYeOOrGLX8qJVc&quot;
 Via: 1.1 vegur
 Cache-Control: max-age=14400
 CF-Cache-Status: HIT
-Age: 4810
+Age: 6339
 Vary: Accept-Encoding
 Server: cloudflare
-CF-RAY: 829ae867aaf5200e-EZE
+CF-RAY: 829b0dbb5bb31eb4-EZE
 Content-Encoding: gzip
 
 {
@@ -209,7 +308,7 @@ Content-Encoding: gzip
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21 nov. 2023 15:13:39</p>
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 21 nov. 2023 15:39:08</p>
 </div>
 </div>
 </body>

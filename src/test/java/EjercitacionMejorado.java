@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Ejercitacion {
+public class EjercitacionMejorado {
 
     @Test
     public void casoPruebaUno(){
